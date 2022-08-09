@@ -9,7 +9,7 @@
  *
  *****************************************************************************/
 /**
- * @file stats.h 
+ * @file stats.h
  * @brief program that contains statistical functions
  *
  * An application that prints a set of array, finds the mean, median, maximum and minimum
@@ -19,6 +19,7 @@
  * @date 8/9/2022
  *
  */
+
 #ifndef __STATS_H__
 #define __STATS_H__
 

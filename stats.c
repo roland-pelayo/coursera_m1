@@ -48,30 +48,58 @@ void main() {
 /* Add other Implementation File Code Here */
 void print_array(unsigned char arr[], int arr_len)
 {
-
+  for(int i=0;i<arr_len;i++){
+    printf("%d ",arr[i]);
+  }
+  printf("\n");
 }
 
 unsigned int find_median(unsigned char arr[], int arr_len)
 {
-
+  unsigned char *p;
+  p = sort_array(arr, arr_len);
+  print_array(p, arr_len);
+  int mid = arr_len/2;
+  return p[mid];
 }
 
 float find_mean(unsigned char arr[], int arr_len)
 {
-
+    float sum = 0.0;
+    for(int i=0;i<arr_len;i++){
+      sum += (float)arr[i];
+    }
+    return sum/(float)arr_len;
 }
 
 unsigned int find_maximum(unsigned char arr[], int arr_len)
 {
-
+  unsigned char *p;
+  p = sort_array(arr, arr_len);
+  return p[arr_len - 1];
 }
 
 unsigned int find_minimum(unsigned char arr[], int arr_len)
 {
-
+  unsigned char *p;
+  p = sort_array(arr, arr_len);
+  return p[0];
 }
 
 unsigned char* sort_array(unsigned char arr[], int arr_len)
 {
-
+  char temp;
+  for(int i=0;i<arr_len - 1;i++)
+  {
+    for(int j=0;j<arr_len - i - 1;j++)
+    {
+      if((int)arr[j] > (int)arr[j+1])
+      {
+        temp = arr[j];
+        arr[j] = arr[j+1];
+        arr[j+1] = temp;
+      }
+    }
+  }
+  return arr;
 }
