@@ -38,6 +38,40 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
+  print_array(test, SIZE);
+  printf("\nMedian is %d",find_median(test, SIZE));
+  printf("\nMean is %f",find_mean(test, SIZE));
+  printf("\nMaximum is %d",find_maximum(test, SIZE));
+  printf("\nMinimum is %d",find_minimum(test, SIZE));
 }
 
 /* Add other Implementation File Code Here */
+void print_array(unsigned char arr[], int arr_len)
+{
+
+}
+
+unsigned int find_median(unsigned char arr[], int arr_len)
+{
+
+}
+
+float find_mean(unsigned char arr[], int arr_len)
+{
+
+}
+
+unsigned int find_maximum(unsigned char arr[], int arr_len)
+{
+
+}
+
+unsigned int find_minimum(unsigned char arr[], int arr_len)
+{
+
+}
+
+unsigned char* sort_array(unsigned char arr[], int arr_len)
+{
+
+}

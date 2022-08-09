@@ -2,5 +2,5 @@
 Roland Pelayo
 Copyright 2022
 
-An application that prints a set of array, sorts them and finds the median, mean, maximum
-and minimum value in the array.
+An application that prints out a set of array of numbers, sorts them, and computes
+the mean, median, maximum and minimum.
